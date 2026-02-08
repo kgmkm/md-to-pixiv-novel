@@ -1,0 +1,68 @@
+import * as assert from "assert";
+import {
+  convertHeadingH2,
+  convertHeadingH3ToH6,
+} from "../../../src/converters/headingConverter";
+
+suite("HeadingConverter", () => {
+  suite("convertHeadingH2", () => {
+    test("h2見出しを改ページ付き章タイトルに変換する", () => {
+      const input = "## 第一章";
+      const expected = "[newpage]\n[chapter:第一章]";
+      assert.strictEqual(convertHeadingH2(input), expected);
+    });
+
+    test("複数のh2見出しを変換する", () => {
+      const input = "## 第一章\n\n本文\n\n## 第二章";
+      const expected =
+        "[newpage]\n[chapter:第一章]\n\n本文\n\n[newpage]\n[chapter:第二章]";
+      assert.strictEqual(convertHeadingH2(input), expected);
+    });
+
+    test("h1見出しは変換しない", () => {
+      const input = "# タイトル";
+      assert.strictEqual(convertHeadingH2(input), input);
+    });
+
+    test("h3見出しは変換しない", () => {
+      const input = "### 小見出し";
+      assert.strictEqual(convertHeadingH2(input), input);
+    });
+  });
+
+  suite("convertHeadingH3ToH6", () => {
+    test("h3見出しを章タイトルに変換する", () => {
+      const input = "### 第一節";
+      const expected = "[chapter:第一節]";
+      assert.strictEqual(convertHeadingH3ToH6(input), expected);
+    });
+
+    test("h4見出しを章タイトルに変換する", () => {
+      const input = "#### 小見出し";
+      const expected = "[chapter:小見出し]";
+      assert.strictEqual(convertHeadingH3ToH6(input), expected);
+    });
+
+    test("h5見出しを章タイトルに変換する", () => {
+      const input = "##### 詳細";
+      const expected = "[chapter:詳細]";
+      assert.strictEqual(convertHeadingH3ToH6(input), expected);
+    });
+
+    test("h6見出しを章タイトルに変換する", () => {
+      const input = "###### 補足";
+      const expected = "[chapter:補足]";
+      assert.strictEqual(convertHeadingH3ToH6(input), expected);
+    });
+
+    test("h2見出しは変換しない", () => {
+      const input = "## 章タイトル";
+      assert.strictEqual(convertHeadingH3ToH6(input), input);
+    });
+
+    test("h7見出しは変換しない", () => {
+      const input = "####### 無効";
+      assert.strictEqual(convertHeadingH3ToH6(input), input);
+    });
+  });
+});
