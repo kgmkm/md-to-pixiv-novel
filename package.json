@@ -32,10 +32,7 @@
       {
         "language": "markdown",
         "scopeName": "source.md-pixiv-novel",
-        "path": "./syntaxes/md-pixiv-novel.tmLanguage.json",
-        "injectTo": [
-          "source.markdown"
-        ]
+        "path": "./syntaxes/md-pixiv-novel.tmLanguage.json"
       }
     ],
     "commands": [

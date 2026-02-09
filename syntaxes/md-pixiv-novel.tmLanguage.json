@@ -1,6 +1,6 @@
 {
   "scopeName": "source.md-pixiv-novel",
-  "injectionSelector": "text.html.markdown",
+  "injectionSelector": "text.markdown",
   "patterns": [
     {
       "match": "(\\{)([^\\|\\}]+)(\\|)([^\\|\\}]+)(\\})",
@@ -8,7 +8,7 @@
         "1": { "name": "punctuation.definition.bold.begin" },
         "2": { "name": "entity.name.section" },
         "3": { "name": "punctuation.definition.bold.end" },
-        "4": { "name": "constant.language" },
+        "4": { "name": "markup.bold" },
         "5": { "name": "punctuation.definition.bold.end" }
       }
     },
@@ -18,7 +18,7 @@
         "1": { "name": "punctuation.definition.string.begin" },
         "2": { "name": "entity.name.section" },
         "3": { "name": "meta.separator" },
-        "4": { "name": "constant.language" },
+        "4": { "name": "markup.bold" },
         "5": { "name": "punctuation.definition.string.end" }
       }
     }
