@@ -2,7 +2,7 @@
   "name": "md-to-pixiv-novel",
   "displayName": "Markdown to pixiv Novel",
   "description": "Markdownをpixiv小説タグに変換するVSCode拡張機能",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "WTFPL",
   "publisher": "your-publisher-name",
   "repository": {
@@ -28,6 +28,16 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "grammars": [
+      {
+        "language": "markdown",
+        "scopeName": "source.md-pixiv-novel",
+        "path": "./syntaxes/md-pixiv-novel.tmLanguage.json",
+        "injectTo": [
+          "source.markdown"
+        ]
+      }
+    ],
     "commands": [
       {
         "command": "md-to-pixiv-novel.convertFile",

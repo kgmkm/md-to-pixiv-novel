@@ -2,6 +2,21 @@
 
 All notable changes to the "md-to-pixiv-novel" extension will be documented in this file.
 
+## [1.0.3] - 2026-02-09
+
+### Added
+
+- ルビタグのシンタックスハイライト（色分け）を実装
+  - `{親文字|ルビ}` 形式のルビ記法に色分けを追加
+  - `[[rb:親文字 > ルビ]]` 形式のpixivルビタグに色分けを追加
+  - 親文字は見出しと同じ色で表示
+  - 区切り線 `|` は見出しと同じ色で表示
+  - ルビ文字は角括弧 `[]` と同じ色で表示
+
+### Changed
+
+- .vscodeignoreを最適化してパッケージサイズを削減
+
 ## [1.0.2] - 2026-02-09
 
 ### Added
