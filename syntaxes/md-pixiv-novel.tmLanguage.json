@@ -3,14 +3,25 @@
   "injectionSelector": "L:text.html.markdown",
   "patterns": [
     {
-      "match": "(\\{)([^\\|\\}]+)(\\|)([^\\|\\}]+)(\\})",
-      "captures": {
+      "begin": "(\\{)([^\\|\\}]+)(\\|)",
+      "end": "(\\})",
+      "beginCaptures": {
         "1": { "name": "punctuation.definition.bold.begin" },
         "2": { "name": "entity.name.section" },
-        "3": { "name": "punctuation.definition.bold.end" },
-        "4": { "name": "markup.bold" },
-        "5": { "name": "punctuation.definition.bold.end" }
-      }
+        "3": { "name": "entity.name.section" }
+      },
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.bold.end" }
+      },
+      "patterns": [
+        {
+          "match": "([^\\|\\}]+)(\\|)?",
+          "captures": {
+            "1": { "name": "markup.bold" },
+            "2": { "name": "entity.name.section" }
+          }
+        }
+      ]
     },
     {
       "match": "(\\[\\[rb:)([^>\\]]+)( > )([^\\]\\]]+)(\\]\\])",
