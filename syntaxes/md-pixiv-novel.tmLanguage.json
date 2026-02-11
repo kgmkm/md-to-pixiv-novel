@@ -1,6 +1,6 @@
 {
-  "scopeName": "source.md-pixiv-novel",
-  "injectionSelector": "text.markdown",
+  "scopeName": "markdown.md-pixiv-novel",
+  "injectionSelector": "L:text.html.markdown",
   "patterns": [
     {
       "match": "(\\{)([^\\|\\}]+)(\\|)([^\\|\\}]+)(\\})",
