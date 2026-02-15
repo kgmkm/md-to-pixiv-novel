@@ -2,6 +2,14 @@
 
 All notable changes to the "md-to-pixiv-novel" extension will be documented in this file.
 
+## [1.0.5] - 2026-02-11
+
+### Fixed
+
+- 熟語ルビ記法（`{劣等種|オロ|カナ|ニンゲン}`）のシンタックスハイライトに対応
+  - 複数のパイプ区切りルビに色分けを適用
+  - 全てのルビ部分（"オロ", "カナ", "ニンゲン"）が正しく色付けされるよう修正
+
 ## [1.0.3] - 2026-02-09
 
 ### Added
