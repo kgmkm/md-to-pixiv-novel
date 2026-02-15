@@ -4,10 +4,10 @@
   "description": "Markdownをpixiv小説タグに変換するVSCode拡張機能",
   "version": "1.0.5",
   "license": "WTFPL",
-  "publisher": "your-publisher-name",
+  "publisher": "kgmkm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/md-to-pixiv-novel"
+    "url": "https://github.com/kgmkm/md-to-pixiv-novel"
   },
   "engines": {
     "vscode": "^1.74.0"
