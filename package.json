@@ -2,7 +2,7 @@
   "name": "md-to-pixiv-novel",
   "displayName": "Markdown to pixiv Novel",
   "description": "Markdownをpixiv小説タグに変換するVSCode拡張機能",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "WTFPL",
   "publisher": "kgmkm",
   "repository": {
