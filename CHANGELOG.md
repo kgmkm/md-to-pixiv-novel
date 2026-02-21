@@ -2,6 +2,14 @@
 
 All notable changes to the "md-to-pixiv-novel" extension will be documented in this file.
 
+## [1.1,0] - 2026-02-22
+
+正式版として公開（正式にSNSで告知できるという意味合い）
+
+### Fixed
+
+README.md を一部修正
+
 ## [1.0.5] - 2026-02-11
 
 ### Fixed

@@ -109,6 +109,11 @@ Markdown形式で執筆された小説テキストを、pixiv小説で使用さ�
 - [pixiv小説 特殊タグ一覧](https://www.pixiv.help/hc/ja/articles/235584168)
 - [でんでんマークダウン仕様](https://conv.denshochan.com/markdown)
 
+## 利用例
+
+[【小説版】私が遣い魔に堕ちた理由 - pixiv小説タグ変換vscode拡張ショーケース](https://www.pixiv.net/novel/bookmark_detail.php?id=27232387)
+
+
 ## ライセンス
 
 WTFPL (Do What The Fuck You Want To Public License)
