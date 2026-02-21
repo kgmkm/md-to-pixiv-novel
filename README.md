@@ -111,7 +111,7 @@ Markdown形式で執筆された小説テキストを、pixiv小説で使用さ�
 
 ## 利用例
 
-[【小説版】私が遣い魔に堕ちた理由 - pixiv小説タグ変換vscode拡張ショーケース](https://www.pixiv.net/novel/bookmark_detail.php?id=27232387)
+[【小説版】私が遣い魔に堕ちた理由 - pixiv小説タグ変換vscode拡張ショーケース](https://www.pixiv.net/novel/show.php?id=27232387)
 
 
 ## ライセンス
